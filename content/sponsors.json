@@ -1,0 +1,18 @@
+{
+  "title": "Sponsors",
+  "description": "Meet the local businesses proudly sponsoring Croydon North Cricket Club.",
+  "hero": { "eyebrow": "Sponsors", "breadcrumb": "Our Sponsors", "h1": "Our Sponsors", "lead": "Proudly supported by local Croydon North and Maroondah businesses." },
+  "thankYou": {
+    "eyebrow": "Thank You",
+    "heading": "The businesses behind the Knights",
+    "text": "Our sponsors make it possible to run junior and senior cricket every season. Please support the local businesses that support us.",
+    "notice": "logos below are text placeholders for sponsors visible on club apparel/socials — replace with real logos and links.",
+    "slots": ["Eastern Security & Communications", "Croydon Chiropractic Centre", "SFA", "Sponsor Logo", "Sponsor Logo", "Sponsor Logo"]
+  },
+  "becomeSponsor": {
+    "title": "Become a Knights sponsor",
+    "text": "Get your business in front of the Croydon North cricket community.",
+    "ctaLabel": "Get In Touch",
+    "href": "contact.html"
+  }
+}

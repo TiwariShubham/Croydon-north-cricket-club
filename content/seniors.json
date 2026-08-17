@@ -1,0 +1,29 @@
+{
+  "title": "Seniors",
+  "description": "Senior cricket at Croydon North Cricket Club — seven XIs competing in the RDCA.",
+  "hero": { "eyebrow": "Seniors", "breadcrumb": "Senior Cricket", "h1": "Senior Cricket", "lead": "Seven senior XIs competing across the Ringwood & District Cricket Association." },
+  "teams": {
+    "eyebrow": "Teams",
+    "heading": "Our senior teams",
+    "text": "The Knights field a full complement of senior sides each season, led by our 1st XI competing in the RDCA's top division.",
+    "table": {
+      "headers": ["Team", "Grade", "Home Ground"],
+      "rows": [
+        ["1st XI", "RDCA top division", "Hughes Park"],
+        ["2nd XI", "RDCA", "Hughes Park"],
+        ["3rd XI", "RDCA", "Barngeong Reserve"],
+        ["4th XI", "RDCA", "Barngeong Reserve"],
+        ["5th – 7th XI", "RDCA", "Hughes Park / Barngeong Reserve"]
+      ]
+    },
+    "notice": "confirm current grades/ladder positions against this season's PlayHQ listing before publishing."
+  },
+  "callout": {
+    "title": "Follow every senior fixture",
+    "text": "Full draws, results and ladders for every Knights senior side are on PlayHQ.",
+    "ctaLabel": "View on PlayHQ",
+    "href": "site:playhq",
+    "external": true,
+    "variant": "btn-outline-dark"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Juniors",
+  "description": "Junior cricket at Croydon North Cricket Club — Milo In2Cricket through to Under 18s.",
+  "hero": { "eyebrow": "Juniors", "breadcrumb": "Junior Cricket", "h1": "Junior Cricket", "lead": "Building the next generation of Knights, from Milo In2Cricket to Under 18s." },
+  "pathway": {
+    "eyebrow": "Pathway",
+    "heading": "A clear junior pathway",
+    "text": "Our junior program gives every young cricketer a place to start and room to grow, with age-appropriate teams and a strong focus on fun, skills and safety.",
+    "cards": [
+      { "title": "Milo In2Cricket", "text": "Introductory program for our youngest players." },
+      { "title": "Under 10 – Under 12", "text": "Modified formats to build core skills and match awareness." },
+      { "title": "Under 14 – Under 16", "text": "Full-format cricket with a focus on development." },
+      { "title": "Under 18", "text": "The final step before senior cricket at the Knights." }
+    ]
+  },
+  "committee": {
+    "eyebrow": "Committee & Policies",
+    "heading": "Junior committee",
+    "text": "Our volunteer junior committee runs the day-to-day of the junior program — team management, coaching coordination, and communication with families.",
+    "notice": "add real committee member names/roles and links to club policies (Working With Children, Safety, Codes of Conduct) here."
+  },
+  "getInvolved": {
+    "heading": "Get Involved",
+    "text": "Interested in playing, coaching or team managing this season?",
+    "ctaLabel": "Register a Junior",
+    "href": "site:playhqRegister",
+    "external": true
+  }
+}

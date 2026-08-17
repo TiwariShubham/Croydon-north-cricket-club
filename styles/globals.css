@@ -319,6 +319,13 @@ table.data-table tr:nth-child(even){ background: var(--grey-lighter); }
 }
 .callout h3{ color:var(--white); margin-bottom:4px; }
 .callout p{ color: rgba(255,255,255,0.9); margin-bottom:0; }
+.callout-transparent{ background: transparent; border: 2px solid rgba(255,255,255,0.3); }
+
+/* ---------- Form fields ---------- */
+.form-field{ margin-bottom: 14px; }
+.form-label{ display:block; font-size:.8rem; margin-bottom:4px; }
+.form-input{ width:100%; padding:10px; border:1px solid var(--grey-light); border-radius:6px; }
+.btn-block{ width:100%; }
 
 /* ---------- Page header (inner pages) ---------- */
 .page-hero{
@@ -348,7 +355,7 @@ table.data-table tr:nth-child(even){ background: var(--grey-lighter); }
 @media (max-width: 860px){ .two-col{ grid-template-columns: 1fr; } }
 
 /* ---------- Timeline ---------- */
-.timeline{ border-left: 3px solid var(--crimson); padding-left: 24px; margin-left:6px; }
+.timeline{ border-left: 3px solid var(--crimson); padding-left: 20px; margin-left:6px; }
 .timeline .t-item{ margin-bottom: 26px; position:relative; }
 .timeline .t-item::before{
   content:""; position:absolute; left:-31px; top:4px;

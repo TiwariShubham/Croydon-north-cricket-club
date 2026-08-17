@@ -1,0 +1,56 @@
+{
+  "title": "Home",
+  "description": "Croydon North Cricket Club (the Knights) — junior and senior community cricket in Croydon North, VIC.",
+  "hero": {
+    "eyebrow": "Ringwood & District Cricket Association",
+    "heading": "Croydon North Cricket Club",
+    "highlight": "Knights",
+    "lead": "A proud community club with over 100 years of history in Croydon North. Junior and senior cricket for players and families of all abilities, on and off the field.",
+    "primaryCta": { "label": "Fixtures & Results", "href": "site:playhq", "external": true },
+    "secondaryCta": { "label": "Join The Knights", "href": "juniors.html" }
+  },
+  "quickLinks": [
+    { "icon": "🏆", "title": "Fixtures & Results", "text": "Follow every Knights team live on PlayHQ.", "linkLabel": "View on PlayHQ →", "href": "site:playhq", "external": true },
+    { "icon": "📝", "title": "Registration", "text": "Sign up for the season — juniors and seniors.", "linkLabel": "Register Now →", "href": "site:playhqRegister", "external": true },
+    { "icon": "📰", "title": "Latest News", "text": "Club updates, results and announcements.", "linkLabel": "Read News →", "href": "news.html" },
+    { "icon": "💼", "title": "Our Sponsors", "text": "Meet the local businesses backing the Knights.", "linkLabel": "View Sponsors →", "href": "sponsors.html" }
+  ],
+  "about": {
+    "eyebrow": "About The Club",
+    "heading": "A Knight's history in the Croydon North community",
+    "text": "Croydon North Cricket Club is one of the most successful clubs in the history of the RDCA, fielding junior and senior teams from Under 10s through to our 1st XI. We're a small but proud community club that welcomes new players, families and supporters every season.",
+    "cards": [
+      { "media": "Our Grounds", "tag": "Home Grounds", "title": "Hughes Park & Barngeong Reserve", "text": "Training and home matches are played across our two Croydon North home grounds." },
+      { "media": "Juniors", "tag": "Pathway", "title": "Junior Cricket", "text": "Under 10s through Under 18s — a clear pathway from Milo In2Cricket into senior ranks." },
+      { "media": "Seniors", "tag": "Pathway", "title": "Senior Cricket", "text": "Multiple XIs across RDCA grades, led by our 1st XI in the association's top division." }
+    ]
+  },
+  "stats": [
+    { "value": "100+", "label": "Years of History" },
+    { "value": "7", "label": "Senior XIs" },
+    { "value": "10+", "label": "Junior Teams" },
+    { "value": "2", "label": "Home Grounds" }
+  ],
+  "news": {
+    "eyebrow": "Club News",
+    "heading": "Latest from the Knights",
+    "notice": "replace these sample stories with real posts from the club's Facebook page and newsletters.",
+    "items": [
+      { "tag": "Club News", "date": "Sample date", "title": "Round 1 team sheets released", "text": "Squads for the opening round across all senior and junior grades are now up on PlayHQ." },
+      { "tag": "Apparel", "date": "Sample date", "title": "Order your 2026/27 CNCC gear", "text": "Official Knights playing and training apparel is open for order — get in before the round 1 cut-off." },
+      { "tag": "Community", "date": "Sample date", "title": "Season launch & sponsor night", "text": "Thank you to everyone who came down to celebrate the new season with the club and our sponsors." }
+    ]
+  },
+  "sponsorsPreview": {
+    "eyebrow": "Our Sponsors",
+    "heading": "Proudly supported by",
+    "slots": ["Eastern Security & Communications", "Croydon Chiropractic Centre", "SFA", "Sponsor Logo", "Sponsor Logo"]
+  },
+  "callout": {
+    "title": "Come play for the Knights",
+    "text": "Registrations are open for the 2026/27 season — juniors and seniors, all skill levels welcome.",
+    "ctaLabel": "Register Today",
+    "href": "site:playhqRegister",
+    "external": true
+  }
+}

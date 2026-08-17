@@ -1,0 +1,50 @@
+{
+  "title": "Our Club",
+  "description": "The history, grounds and story of Croydon North Cricket Club — the Knights.",
+  "hero": { "eyebrow": "Our Club", "breadcrumb": "About The Knights", "h1": "About The Knights", "lead": "A community cricket club with a proud history in Croydon North." },
+  "story": {
+    "eyebrow": "Our Story",
+    "heading": "Give… so they may show!!",
+    "paragraphs": [
+      "Croydon North Cricket Club Inc. — known to everyone as the Knights — is one of the most successful clubs in the history of the Ringwood & District Cricket Association (RDCA). For over 100 years the club has been a home ground for cricketers and families across Croydon North.",
+      "We're a small but proud community club. Whether you're picking up a bat for the first time in Milo In2Cricket or turning out for the 1st XI, the Knights is about the same thing: a welcoming club, strong club spirit, and giving every player the chance to show what they can do."
+    ],
+    "notice": "swap this section for the club's full official history, founding year and honour boards.",
+    "groundsHeading": "Where we play",
+    "groundsIntro": "The Knights call two grounds home in Croydon North:",
+    "grounds": [
+      { "title": "Hughes Park", "text": "Home ground for senior and junior matches and training." },
+      { "title": "Barngeong Reserve", "text": "Second home ground hosting additional junior and senior fixtures." }
+    ]
+  },
+  "snapshot": {
+    "heading": "Club Snapshot",
+    "rows": [
+      { "label": "Founded", "value": "Early 1900s (100+ years)" },
+      { "label": "Nickname", "value": "The Knights" },
+      { "label": "Association", "value": "Ringwood & District CA" },
+      { "label": "Colours", "value": "Maroon & Grey" },
+      { "label": "Grounds", "value": "Hughes Park, Barngeong Reserve" }
+    ]
+  },
+  "timeline": {
+    "eyebrow": "Milestones",
+    "heading": "Club timeline",
+    "notice": "add real premiership years, life members and milestones here.",
+    "items": [
+      { "year": "Early 1900s", "title": "Club founded", "text": "Croydon North Cricket Club is established in the local community." },
+      { "year": "Est. history", "title": "Growth of junior pathway", "text": "Junior programs expand from Milo In2Cricket through to Under 18s." },
+      { "year": "Today", "title": "7 senior XIs, 10+ junior teams", "text": "The Knights field one of the largest playing groups in the RDCA." }
+    ]
+  },
+  "apparel": {
+    "eyebrow": "Club Apparel",
+    "heading": "Official Knights gear",
+    "text": "Maroon & grey playing and training apparel, available to order online each season for players and supporters.",
+    "cards": [
+      { "media": "Playing Shirt", "title": "Playing Polo", "link":"", "text": "Official maroon & grey CNCC Knights match shirt." },
+      { "media": "Training Kit", "title": "Training Kit", "link":"https://sportingfineart.com.au/collections/vendors?q=Croydon%20North%20Cricket%20Club", "text": "Training wear for club sessions and nets." },
+      { "media": "Supporter Gear", "title": "Supporter Merchandise", "link":"", "text": "Show your colours on game day." }
+    ]
+  }
+}

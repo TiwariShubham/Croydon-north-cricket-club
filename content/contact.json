@@ -1,0 +1,22 @@
+{
+  "title": "Contact",
+  "description": "Get in touch with Croydon North Cricket Club — the Knights.",
+  "hero": { "eyebrow": "Contact", "breadcrumb": "Get In Touch", "h1": "Get In Touch", "lead": "Questions about playing, sponsoring or volunteering with the Knights? We'd love to hear from you." },
+  "details": {
+    "eyebrow": "Contact Details",
+    "heading": "Reach the club",
+    "rows": [
+      { "label": "Email", "type": "email" },
+      { "label": "Facebook", "type": "facebook", "display": "facebook.com/knightscncc" },
+      { "label": "Instagram", "type": "instagram", "display": "@cnccknights" },
+      { "label": "Ground 1", "type": "text", "value": "Hughes Park, Croydon North VIC" },
+      { "label": "Ground 2", "type": "text", "value": "Barngeong Reserve, Croydon North VIC" }
+    ],
+    "notice": "replace the email address and add a phone number / postal address once confirmed."
+  },
+  "form": {
+    "heading": "Send a message",
+    "action": "https://formspree.io/f/mnpagvdb",
+    "submitLabel": "Send Message"
+  }
+}

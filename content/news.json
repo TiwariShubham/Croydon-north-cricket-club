@@ -1,0 +1,14 @@
+{
+  "title": "News",
+  "description": "Latest news, match reports and announcements from Croydon North Cricket Club.",
+  "hero": { "eyebrow": "News", "breadcrumb": "Club News", "h1": "Club News", "lead": "The latest results, announcements and stories from the Knights." },
+  "notice": "these are sample articles. Replace with real posts pulled from the club's Facebook and Instagram pages.",
+  "items": [
+    { "tag": "Match Report", "date": "Sample date", "title": "1st XI opens the season with a win", "text": "A strong all-round performance gets the senior season off to the perfect start." },
+    { "tag": "Juniors", "date": "Sample date", "title": "Junior registrations now open", "text": "Milo In2Cricket through to Under 18s — sign up before the season cut-off." },
+    { "tag": "Club", "date": "Sample date", "title": "2026/27 apparel orders open", "text": "Official CNCC Knights playing and training gear is available to order online." },
+    { "tag": "Sponsors", "date": "Sample date", "title": "Welcoming our 2026/27 sponsors", "text": "Thank you to the local businesses supporting the Knights this season." },
+    { "tag": "Community", "date": "Sample date", "title": "Season launch night a huge success", "text": "Players, families and sponsors came together to kick off the new season." },
+    { "tag": "Club", "date": "Sample date", "title": "Life members honoured", "text": "Recognising the volunteers who have shaped the club over the decades." }
+  ]
+}
