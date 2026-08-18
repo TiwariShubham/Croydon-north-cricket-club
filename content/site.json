@@ -12,12 +12,12 @@
   "tagline": "A proud community cricket club competing in the Ringwood & District Cricket Association (RDCA), based at Hughes Park and Barngeong Reserve, Croydon North.",
   "bottomNote": "Site built for CNCC · Colours & crest are placeholders pending official brand assets",
   "nav": [
-    { "key": "home", "href": "index.html", "label": "Home" },
-    { "key": "our-club", "href": "our-club.html", "label": "Our Club" },
-    { "key": "news", "href": "news.html", "label": "News" },
-    { "key": "juniors", "href": "juniors.html", "label": "Juniors" },
-    { "key": "seniors", "href": "seniors.html", "label": "Seniors" },
-    { "key": "sponsors", "href": "sponsors.html", "label": "Sponsors" },
-    { "key": "contact", "href": "contact.html", "label": "Contact" }
+    { "key": "home", "href": "/", "label": "Home" },
+    { "key": "our-club", "href": "/our-club", "label": "Our Club" },
+    { "key": "news", "href": "/news", "label": "News" },
+    { "key": "juniors", "href": "/juniors", "label": "Juniors" },
+    { "key": "seniors", "href": "/seniors", "label": "Seniors" },
+    { "key": "sponsors", "href": "/sponsors", "label": "Sponsors" },
+    { "key": "contact", "href": "/contact", "label": "Contact" }
   ]
 }

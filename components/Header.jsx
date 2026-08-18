@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 import { useSite } from "../lib/SiteContext";
 
 export default function Header({ active }) {
@@ -19,13 +20,13 @@ export default function Header({ active }) {
       </div>
       <header className="site-header">
         <div className="container header-inner">
-          <a href="index.html" className="brand">
+          <Link href="/" className="brand">
             <div className="brand-crest"><span>CNCC</span></div>
             <div className="brand-text">
               <div className="club-name">Croydon North<br />Cricket Club</div>
               <div className="club-sub">{site.nickname}</div>
             </div>
-          </a>
+          </Link>
           <button
             className="nav-toggle"
             aria-label="Toggle navigation"
@@ -35,13 +36,13 @@ export default function Header({ active }) {
           </button>
           <nav className={`main-nav${open ? " open" : ""}`}>
             {site.nav.map((item) => (
-              <a
+              <Link
                 key={item.key}
                 href={item.href}
                 className={item.key === active ? "active" : undefined}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
