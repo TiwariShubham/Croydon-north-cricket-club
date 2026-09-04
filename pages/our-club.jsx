@@ -2,11 +2,12 @@ import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 import PageHero from "../components/PageHero";
 import Card from "../components/Card";
+import Callout from "../components/Callout";
 import KeyValueTable from "../components/KeyValueTable";
 import content from "../content/our-club.json";
 
 export default function OurClub() {
-  const { hero, story, snapshot, timeline, apparel } = content;
+  const { hero, story, snapshot, timeline, hallOfFame, apparel } = content;
 
   return (
     <Layout active="our-club">
@@ -63,6 +64,13 @@ export default function OurClub() {
                 <p>{item.text}</p>
               </div>
             ))}
+          </div>
+          <div className="callout" style={{ marginTop: 36 }}>
+            <div>
+              <h3>{hallOfFame.title}</h3>
+              <p>{hallOfFame.text}</p>
+            </div>
+            <a href={hallOfFame.href} className="btn btn-outline">{hallOfFame.ctaLabel}</a>
           </div>
         </div>
       </section>

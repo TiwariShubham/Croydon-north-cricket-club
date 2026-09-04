@@ -37,6 +37,12 @@
       { "year": "Today", "title": "7 senior XIs, 10+ junior teams", "text": "The Knights field one of the largest playing groups in the RDCA." }
     ]
   },
+  "hallOfFame": {
+    "title": "Hall of Fame",
+    "text": "Life Members, Best & Fairest winners and premiership sides from across the club's 100+ year history.",
+    "ctaLabel": "View Hall of Fame",
+    "href": "hall-of-fame.html"
+  },
   "apparel": {
     "eyebrow": "Club Apparel",
     "heading": "Official Knights gear",

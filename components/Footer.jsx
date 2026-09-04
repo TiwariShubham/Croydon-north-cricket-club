@@ -28,6 +28,7 @@ export default function Footer() {
             <h4>Club</h4>
             <ul>
               <li><a href="our-club.html">Our History</a></li>
+              <li><a href="hall-of-fame.html">Hall of Fame</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="news.html">News</a></li>
               <li><a href="contact.html">Contact Us</a></li>

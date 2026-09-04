@@ -1,0 +1,90 @@
+{
+  "title": "Hall of Fame",
+  "description": "Honouring the Life Members, premiership sides and record-breakers of Croydon North Cricket Club — the Knights.",
+  "hero": { "eyebrow": "Hall of Fame", "breadcrumb": "Hall of Fame", "h1": "Honouring The Knights", "lead": "Over 100 years of Croydon North Cricket Club have been built by its Life Members, premiership sides and record-breaking players. This is where we recognise them." },
+  "topNotice": "everything on this page is a sample layout. Once the club's records spreadsheet/PDF is in hand, the names, years and figures below will be replaced with the real Hall of Fame.",
+  "lifeMembers": {
+    "eyebrow": "Life Members",
+    "heading": "Life Members of the Knights",
+    "text": "Awarded to those who have given exceptional, sustained service to Croydon North Cricket Club on and off the field.",
+    "table": {
+      "headers": ["Year Awarded", "Name", "Recognised For"],
+      "rows": [
+        ["[Year]", "[Life Member Name]", "[e.g. Club President, 19xx–19xx]"],
+        ["[Year]", "[Life Member Name]", "[e.g. Treasurer & 300+ games]"],
+        ["[Year]", "[Life Member Name]", "[e.g. Junior Coordinator]"],
+        ["[Year]", "[Life Member Name]", "[e.g. Groundsman]"]
+      ]
+    }
+  },
+  "seniorHallOfFame": {
+    "eyebrow": "Senior Hall of Fame",
+    "heading": "Senior award winners",
+    "text": "Best & Fairest, leading run-scorers and leading wicket-takers across the club's senior XIs, season by season.",
+    "categories": [
+      {
+        "title": "Best & Fairest",
+        "table": {
+          "headers": ["Season", "Winner"],
+          "rows": [
+            ["[20xx/xx]", "[Player Name]"],
+            ["[20xx/xx]", "[Player Name]"],
+            ["[20xx/xx]", "[Player Name]"]
+          ]
+        }
+      },
+      {
+        "title": "Leading Run-Scorer",
+        "table": {
+          "headers": ["Season", "Player"],
+          "rows": [
+            ["[20xx/xx]", "[Player — xxx runs]"],
+            ["[20xx/xx]", "[Player — xxx runs]"],
+            ["[20xx/xx]", "[Player — xxx runs]"]
+          ]
+        }
+      },
+      {
+        "title": "Leading Wicket-Taker",
+        "table": {
+          "headers": ["Season", "Player"],
+          "rows": [
+            ["[20xx/xx]", "[Player — xx wickets]"],
+            ["[20xx/xx]", "[Player — xx wickets]"],
+            ["[20xx/xx]", "[Player — xx wickets]"]
+          ]
+        }
+      }
+    ]
+  },
+  "juniorHallOfFame": {
+    "eyebrow": "Junior Hall of Fame",
+    "heading": "Junior award winners",
+    "text": "Recognising standout junior players across our age groups each season.",
+    "table": {
+      "headers": ["Season", "Age Group", "Award", "Winner"],
+      "rows": [
+        ["[20xx/xx]", "[U10–U18]", "[Best & Fairest]", "[Player Name]"],
+        ["[20xx/xx]", "[U10–U18]", "[Most Improved]", "[Player Name]"],
+        ["[20xx/xx]", "[U10–U18]", "[Best & Fairest]", "[Player Name]"]
+      ]
+    }
+  },
+  "premierships": {
+    "eyebrow": "Premierships",
+    "heading": "Premiership honour board",
+    "text": "Every flag the Knights have brought home across senior and junior grades.",
+    "cards": [
+      { "title": "[20xx/xx]", "text": "[1st XI — RDCA top division]" },
+      { "title": "[20xx/xx]", "text": "[3rd XI]" },
+      { "title": "[20xx/xx]", "text": "[U16 premiers]" },
+      { "title": "[20xx/xx]", "text": "[2nd XI]" }
+    ]
+  },
+  "callout": {
+    "title": "Help us complete the honour board",
+    "text": "Have records, photos or names to add? We'd love to hear from you.",
+    "ctaLabel": "Get In Touch",
+    "href": "contact.html"
+  }
+}
