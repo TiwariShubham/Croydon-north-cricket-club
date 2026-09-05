@@ -55,7 +55,9 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <div>&copy; {year ?? ""} {site.clubName} Inc. &mdash; The {site.nickname}. All rights reserved.</div>
-          <div>{site.bottomNote}</div>
+          <div>
+            Site built by <a href={site.builtBy.url} target="_blank" rel="noopener">{site.builtBy.label}</a> &middot; {site.bottomNote}
+          </div>
         </div>
       </div>
     </footer>

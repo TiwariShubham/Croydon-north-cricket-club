@@ -10,7 +10,8 @@
   "topbarText": "Hughes Park & Barngeong Reserve, Croydon North VIC  |  Est. 1900s — 100+ years of the Knights",
   "grounds": ["Hughes Park, Croydon North VIC", "Barngeong Reserve, Croydon North VIC"],
   "tagline": "A proud community cricket club competing in the Ringwood & District Cricket Association (RDCA), based at Hughes Park and Barngeong Reserve, Croydon North.",
-  "bottomNote": "Site built for CNCC · Colours & crest are placeholders pending official brand assets",
+  "builtBy": { "label": "Digituls", "url": "https://digituls.org" },
+  "bottomNote": "Colours & crest are placeholders pending official brand assets",
   "nav": [
     { "key": "home", "href": "/", "label": "Home" },
     { "key": "our-club", "href": "/our-club", "label": "Our Club" },
