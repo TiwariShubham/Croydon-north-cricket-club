@@ -2,11 +2,26 @@
 
 A plain-English guide to updating croydonnorthcc.com.au yourself — no coding experience required for the edits covered here.
 
-**For:** club committee & volunteers · **Covers:** text & content edits only · **Last verified:** 22 Sep 2026
+**For:** club committee & volunteers · **Covers:** text & content edits only · **Full edition · Last verified:** 22 Sep 2026
 
-> This is the durable backup copy of the handbook, kept in the repo so it survives independently of any one person's tools. The day-to-day version — with nicer formatting and navigation — lives at the link Shub shared with the committee.
+> This is the durable backup copy of the handbook, kept in the repo so it survives independently of any one person's tools. The day-to-day version — with nicer formatting, navigation and collapsible sections — lives at the link Shub shared with the committee.
 
 ---
+
+## 60-second cheat sheet
+
+| I want to… | Open this file | Find this label |
+|---|---|---|
+| Change the club email / Facebook / Instagram | `site.json` | `email`, `facebook`, `instagram` |
+| Change the scrolling top banner text | `site.json` | `topbarText` |
+| Add a news story | `news.json` | `items` |
+| Add a Life Member / award winner | `hall-of-fame.json` | `rows` inside the relevant table |
+| Add or rename a sponsor | `sponsors.json` | `slots` |
+| Update a senior team / ground | `seniors.json` | `rows` |
+| Rename a menu item | `site.json` | `nav` |
+| Change the homepage stats (100+ years, etc.) | `home.json` | `stats` |
+
+Every one of these follows the same four moves: open the file on github.com, click the pencil, edit text inside the quotes, commit. Full detail below.
 
 ## How the site is actually built
 
@@ -34,12 +49,13 @@ All of this happens in your web browser, on github.com. Nothing to install.
 
 1. Go to github.com and sign in with the account that has access to the club's repository.
 2. Open the **croydon-north-cc-website** repository, then click into the `content` folder.
-3. Click the file for the page you want to change — file names match the page (`news.json` is the News page, `sponsors.json` is the Sponsors page, and so on).
-4. Click the pencil icon (top right of the file view) to start editing.
-5. Find the line you want to change and edit the text *inside the quote marks only*. See "Reading the content files" below for exactly what's safe to touch on a line.
-6. Scroll to the bottom. Under "Commit changes," write a short plain-English note — e.g. *"Update sponsor logo link"* — this becomes a permanent, readable history of every change anyone makes.
-7. Choose **"Commit directly to the `master` branch"** (GitHub names this option after your project's main branch, which here is called `master`) and click **Commit changes**.
-8. Give it a minute or two, then reload the live site to check your change appears correctly.
+3. Click the file for the page you want to change — file names match the page (`news.json` is the News page, `sponsors.json` is the Sponsors page, and so on). You'll land on a page showing the file's text with line numbers down the left.
+4. Look at the small toolbar above the text — it reads **Code | Blame** on the left, and on the right there's a pencil (edit) icon next to a small download icon. Click the **pencil**.
+5. If you're not already signed in, GitHub will ask you to sign in first — do that, then click the pencil again.
+6. Find the line you want to change and edit the text *inside the quote marks only*. See "Reading the content files" below for exactly what's safe to touch on a line.
+7. Scroll to the bottom. Under "Commit changes," write a short plain-English note — e.g. *"Update sponsor logo link"* — this becomes a permanent, readable history of every change anyone makes.
+8. Choose **"Commit directly to the `master` branch"** (GitHub names this option after your project's main branch, which here is called `master`) and click **Commit changes**.
+9. Give it a minute or two, then reload the live site to check your change appears correctly.
 
 ## Reading the content files
 
@@ -131,6 +147,101 @@ The "Send a message" form already works — it's connected to Formspree, which e
 
 **One exception:** a few fields hold real web addresses rather than display text — `"href"`, `"action"`, and `"link"` keys. Editing the wording next to them is safe; editing the address itself changes where a button sends people, so double-check before saving.
 
+## Full field reference
+
+Everything above covers the edits people actually make. This is the rest — every label in every content file, for when you need something more obscure.
+
+<details><summary><strong>content/site.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `clubName` | Full club name, used in the footer copyright line. |
+| `nickname` | "Knights" — appears next to the club name across the site. |
+| `siteUrl` | The site's own web address, used behind the scenes for search engines. Leave alone unless the domain changes. |
+| `email`, `facebook`, `instagram` | Top bar & footer contact links, site-wide. |
+| `playhq`, `playhqRegister` | Links to the club's PlayHQ page and its registration page. |
+| `topbarText` | The scrolling banner line at the very top of every page. |
+| `grounds` | List of home grounds, shown in the footer. |
+| `tagline` | One-line club description, shown in the footer. |
+| `builtBy.label`, `builtBy.url` | The "Site built by Digituls" footer credit. |
+| `bottomNote` | The small print after the footer credit. |
+| `nav` | The main menu — see the recipe above. |
+
+</details>
+
+<details><summary><strong>content/home.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `title`, `description` | Not shown on the page — used by search engines and browser tabs. |
+| `hero.eyebrow`, `hero.heading`, `hero.highlight`, `hero.lead` | The big banner text at the top of the homepage. |
+| `hero.primaryCta`, `hero.secondaryCta` | The two hero buttons — each a `label` and `href`. |
+| `quickLinks` | The four tiles below the hero — each an `icon` (emoji), `title`, `text`, `linkLabel`, `href`. |
+| `about.eyebrow`, `about.heading`, `about.text` | The "About The Club" heading and paragraph. |
+| `about.cards` | The three cards under it — `media`, `tag`, `title`, `text` each. |
+| `stats` | The four big numbers — each a `value` and `label`. |
+| `news` | The homepage's short news teaser — see the recipe above. |
+| `sponsorsPreview` | The homepage's short sponsor list — see the recipe above. |
+| `callout` | The "Come play for the Knights" banner — `title`, `text`, `ctaLabel`, `href`. |
+
+</details>
+
+<details><summary><strong>content/our-club.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `hero.*` | The page banner — eyebrow, breadcrumb, heading, lead. |
+| `story.heading`, `story.paragraphs` | The club history heading and paragraphs (a list — add more by copying a line). |
+| `story.grounds` | The two ground cards — `title` and `text` each. |
+| `snapshot.rows` | The "Club Snapshot" table — `label` and `value` each. |
+| `timeline.items` | The club timeline — `year`, `title`, `text` each. |
+| `hallOfFame` | The Hall of Fame callout on this page — `title`, `text`, `ctaLabel`, `href`. |
+| `apparel.cards` | The three apparel cards — `media`, `title`, `text`, `link` (can be `""` if no link yet). |
+
+</details>
+
+<details><summary><strong>content/juniors.json & seniors.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `hero.*` (both) | Each page's banner text. |
+| `pathway.cards` (juniors) | The four age-group cards — `title` and `text` each. |
+| `committee.text`, `committee.notice` (juniors) | The junior committee description. |
+| `getInvolved` (juniors) | The "Register a Junior" callout — `heading`, `text`, `ctaLabel`, `href`. |
+| `teams.table` (seniors) | The senior teams table — see the recipe above. |
+| `teams.notice` (seniors) | The reminder to confirm grades against PlayHQ each season. |
+| `callout` (seniors) | The "Follow every senior fixture" banner. |
+
+</details>
+
+<details><summary><strong>content/sponsors.json & contact.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `hero.*` (both) | Each page's banner text. |
+| `thankYou.text`, `thankYou.notice` (sponsors) | The "businesses behind the Knights" paragraph. |
+| `thankYou.slots` (sponsors) | The sponsor name list — see the recipe above. |
+| `becomeSponsor` (sponsors) | The "Become a Knights sponsor" callout. |
+| `details.rows` (contact) | The contact details table — `label` plus either `value` or a `type`/`display` pair. |
+| `details.notice` (contact) | The small reminder note under the contact table. |
+| `form.heading`, `form.submitLabel` (contact) | The message form's heading and button text — safe to edit. Not `form.action`. |
+
+</details>
+
+<details><summary><strong>content/hall-of-fame.json</strong></summary>
+
+| Label | Controls |
+|---|---|
+| `hero.*` | The page banner text. |
+| `topNotice` | The placeholder-content reminder banner — set to `""` once real records are in. |
+| `lifeMembers` | Heading, text and table for Life Members. |
+| `seniorHallOfFame.categories` | Three sub-tables — Best & Fairest, Leading Run-Scorer, Leading Wicket-Taker. |
+| `juniorHallOfFame` | Heading, text and table for junior award winners. |
+| `premierships.cards` | The premiership honour board tiles — `title` (season) and `text` (team). |
+| `callout` | The "Help us complete the honour board" banner. |
+
+</details>
+
 ## Going live automatically
 
 Until now, turning an edited content file into the live pages needed one extra technical step only a developer could run. That's now been closed: an automatic-build file has been added at `.github/workflows/deploy.yml`. Once it's committed and pushed, every future commit on GitHub.com turns into the live site on its own within about a minute.
@@ -147,6 +258,40 @@ Two short steps finish it off:
 
 From then on, the repository's **Actions** tab shows a green tick or red cross next to each commit, telling you at a glance whether it published successfully.
 
+## The domain & hosting, explained
+
+Background, not something you'll ever need to edit — but a few terms worth knowing, and an honest status check.
+
+**Domain** is the address itself — `croydonnorthcc.com.au` — owned through a registrar, separately from where the site's files live.
+
+**Hosting** is where the website files actually live and get served from — GitHub Pages, for free.
+
+**DNS** is the phone book connecting the two: it tells the internet where to send someone who types the domain. This is configured at the registrar, not on GitHub.
+
+> **Current status:** as of this handbook's last verification, `www.croydonnorthcc.com.au` isn't connected yet — the DNS entry hasn't been set up, so the address doesn't resolve. The site itself works fine at its GitHub-provided address in the meantime. Ask Shub for the current status before telling anyone the club's own web address is broken.
+
+## Roles & access
+
+Editing on GitHub requires a GitHub account with access to the repository — there's no separate "website password."
+
+**Adding a committee member:** never share your own login. In the repository, go to Settings → Collaborators → Add people, and enter their GitHub username or email. They accept an invitation, then can edit exactly as this handbook describes, under their own name.
+
+**Removing access:** same screen — remove their name from Collaborators. Takes effect immediately.
+
+**Permission levels:** GitHub offers Read, Write and Admin. Write is enough for anyone following this handbook — it allows editing and committing, not changing repository settings or managing access. Keep Admin to one or two people.
+
+## Seasonal update checklist
+
+A short list of what typically goes stale between seasons:
+
+- [ ] Senior teams table (`seniors.json`) — confirm grades and grounds match this season's PlayHQ listing.
+- [ ] Homepage stats (`home.json → stats`) — team counts change year to year.
+- [ ] Sponsors (`sponsors.json` & `home.json → sponsorsPreview`) — add new, remove lapsed.
+- [ ] News (`news.json` & `home.json → news`) — clear out sample stories once real ones exist.
+- [ ] Hall of Fame (`hall-of-fame.json`) — add the season's award winners once finals wrap up.
+- [ ] Contact details (`site.json`) — confirm email/socials are current, especially after a committee handover.
+- [ ] Registrations open (`home.json → hero` & `callout`) — update wording once the new season's registration is live.
+
 ## If something looks wrong
 
 **Change isn't showing:** wait two minutes and hard-refresh (Shift + Reload). Still not there? Open the **Actions** tab — a red cross next to your commit means the save didn't go through, usually a small JSON typo. Click it to see which file and line.
@@ -154,6 +299,17 @@ From then on, the repository's **Actions** tab shows a green tick or red cross n
 **Undo a change:** open the file, click **History** (the clock icon), find the version from before your edit, and copy its content back into a new edit — or ask Shub to revert the commit in one click.
 
 **Nothing is ever truly lost:** GitHub keeps every past version of every file automatically. The worst case is a short delay while a mistake gets reverted.
+
+**More scenarios:**
+
+| What you're seeing | What it means |
+|---|---|
+| No pencil icon on the file | You're not signed in, or don't have edit access yet — see Roles & access. |
+| Pencil says something about "forking" | You're signed in but don't have Write access. Ask to be added as a collaborator instead of forking. |
+| Can't click "Commit changes" | Write something in the commit message box first. |
+| Want to check your edit before saving | Click "Preview" next to "Edit" — for JSON it shows raw text, but confirms nothing's visibly missing. |
+| Edited the wrong file | No harm if not committed. If committed, follow "Undo a change" above. |
+| Two people edited the same file at once | GitHub usually merges fine if different lines changed. If it warns of a conflict, stop and ask for help. |
 
 ## Plain-English glossary
 
@@ -167,6 +323,16 @@ From then on, the repository's **Actions** tab shows a green tick or red cross n
 ## Bigger changes & who to ask
 
 This handbook covers text and content edits — most of what a club needs day to day. It deliberately doesn't cover adding a new page, changing colours or layout, or anything inside `pages` or `components` — those are code changes, and a mistake there can take the whole site offline. For anything in that category, or if a safety check ever fails and you're not sure why, reach out to Shub or the site's developer (Digituls) rather than guessing.
+
+## Handbook change log
+
+This handbook is verified against the real project, not written from memory — this log says when and what changed.
+
+| Date | What changed |
+|---|---|
+| 22 Sep 2026 | Expanded into the full edition: cheat sheet, complete field-by-field appendix, roles & access, seasonal checklist, domain/hosting explainer, wider troubleshooting FAQ. |
+| 22 Sep 2026 | All recipes verified live against every `content/*.json` file (previously only `site.json` and `hall-of-fame.json` were confirmed). |
+| 16 Sep 2026 | First version: golden rules, step-by-step process, JSON basics, recipes for `site.json` and `hall-of-fame.json`. |
 
 ---
 
